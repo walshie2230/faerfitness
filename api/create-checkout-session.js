@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [{
-      price: 'price_1PfE83AGtSRmBjZCLE3fYIm3', // Replace with your price ID
+      price: 'price_1Pg0XYAGtSRmBjZCSD3QIRIn', // Replace with your price ID
       quantity: 1,
     }],
     mode: 'subscription',
